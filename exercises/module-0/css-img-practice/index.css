@@ -1,0 +1,19 @@
+html, body {
+    margin: 0;
+    display: 0;
+}
+li {
+    display:inline;
+}
+image {
+    display: block;
+    height: 175%;
+    width: 175%;
+}
+p {
+    display: inline-block;
+    width: 45%
+}
+h1 {
+    display:inline;
+}

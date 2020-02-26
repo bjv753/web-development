@@ -1,0 +1,203 @@
+
+* {
+    font-size: 0px;
+}
+
+.FranceBlue{
+    display: inline-block;
+    height: 300px;
+    width: 150px;
+    background-color: mediumblue;
+
+}
+
+.FranceWhite{
+    display:inline-block;
+    height: 300px;
+    width: 150px;
+    background-color: rgb(246, 245, 240);
+}
+
+.FranceRed{
+    display:inline-block;
+    height: 300px;
+    width: 150px;
+    background-color: rgb(255, 0, 0);
+}
+
+.GermanyBlack{
+    display: inline-block;
+    height: 110px;
+    width: 450px;
+    background-color: black;
+}
+
+.GermanyRed{
+    display: block;
+    height: 110px;
+    width: 450px;
+    background-color: red;
+}
+
+.GermanyYellow{
+    display: inline-block;
+    height: 110px;
+    width: 450px;
+    background-color: rgb(255, 208, 0);
+}
+
+.madegascar_white{
+    display: inline-block;
+    height: 300px;
+    width: 150px;
+    background-color: rgb(250, 249, 244);
+}
+.MadagascarRGContainer {
+    display: inline-block;
+}
+    
+.MadegascarRed{
+    display: block;
+    height: 150px;
+    width: 300px;
+    background-color: rgb(255, 0, 0);
+}
+
+.MadegascarGreen{
+    display: block;
+    height: 150px;
+    width: 300px;
+    background-color: rgb(20, 224, 20);
+}
+
+.swits_red{
+    display: block;
+    position: relative;
+    height: 450px;
+    width: 450px;
+    background-color: red;
+}
+
+.swits_w_container{
+    display: inline-block;
+    position: relative;
+}
+
+.swits_w1{
+    display: block;
+    position: relative;
+    top: 30pt;
+    left: 140pt;
+    height: 250px;
+    width: 80px;
+    background-color: rgb(232, 241, 241);
+}
+
+.swits_w2{
+    display: block;
+    position: relative;
+    left: 75pt;
+    bottom: 90pt;
+    height: 75px;
+    width: 250px;
+    background-color: rgb(236, 243, 243);
+}
+
+.sweed_blue{
+    display: block;
+    position: relative;
+    height: 300px;
+    width: 450px;
+    background-color: rgb(50, 69, 240);
+}
+
+.sweed_yello_container{
+    display: inline-block;
+    position: relative;
+}
+
+.sweed_yello1{
+    display: block;
+    position: relative;
+    top: 0pt;
+    left: 75pt;
+    height: 300px;
+    width: 55px;
+    background-color: rgb(255, 251, 0);
+}
+
+.sweed_yello2{
+    display: block;
+    position: relative;
+    left: 0pt;
+    bottom: 135pt;
+    height: 55px;
+    width: 450px;
+    background-color: rgb(255, 251, 0);
+}
+
+.gambia_red{
+    display: inline-block;
+    height: 110px;
+    width: 450px;
+    background-color: rgb(255, 0, 0);
+}
+
+.gambia_blue{
+    display: block;
+    border: 10px;
+    border-color: white;
+    height: 110px;
+    width: 450px;
+    background-color: rgb(38, 0, 255);
+}
+
+.gambia_green{
+    display: inline-block;
+    height: 110px;
+    width: 450px;
+    background-color: rgb(60, 255, 0);
+}
+
+  .braz_green{
+    display: block;
+    position: relative;
+    height: 300px;
+    width: 450px;
+    background-color: rgb(0, 177, 15);
+}
+
+.triangle-left {
+    display: block;
+    position: relative;
+    bottom: 115pt;
+    right: -15pt;
+	width: 0;
+	height: 0;
+	border-top: 100px solid transparent;
+	border-right: 200px solid rgb(255, 251, 0);
+	border-bottom: 100px solid transparent;
+}
+
+.triangle-right {
+    display: block;
+    position: relative;
+    top: 35pt;
+    left: 165pt;
+    width: 0;
+	height: 0;
+	border-top: 100px solid transparent;
+	border-left: 200px solid rgb(255, 251, 21);
+	border-bottom: 100px solid transparent;
+}
+
+.dot {
+    display: block;
+    position: relative;
+    top:-242pt;
+    Left: 112pt;
+    height: 140px;
+    width: 140px;
+    background-color: #0000FF;
+    border-radius: 50%;
+  }
