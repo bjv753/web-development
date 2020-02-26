@@ -4,13 +4,21 @@ body {
 }
 
 .circle{
-   
     display: flex;
-    background-color: black;
+    background-color: rgb(255, 35, 35);
     border-radius: 50%;
-    height: 888px;
-    width: 888px;
+    height: 55px;
+    width: 55px;
     margin: 0;
-    background: radial-gradient(circle at 100px 100px, #5cabff, rgb(0, 0, 0));
-    background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+    background: radial-gradient(circle at 100px 100px, #9acbff, rgb(255, 30, 30));
+    background: radial-gradient(circle at 100px 100px, #78b9ff, rgb(255, 24, 24));
+}
+
+.box-1{
+    border-color: crimson;
+    border-style: dashed;
+    border-width: 25px;
+    padding: 25px;
+    margin: 50px;
+    width: 1000px;
 }
