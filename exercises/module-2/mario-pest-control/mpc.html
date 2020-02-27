@@ -1,29 +1,37 @@
 <html>
     <head>
-        <title>mario-pest-control</title>
+        <title>MARIO-PEST-CONTROL</title>
         <link rel="stylesheet" href="mpc.css"></link>
     </head>
     <body>
-        <h1>mario-pest-control</h1>
-        <figure class="circle"></figure>
-        
+        <h1>MARIO-PEST-CONTROL</h1>
         <div class="box-1">
             <h2>GOOMBA: Wanted Dead or Alive</h2>
             <p>(Princess Peach will pay 5-Coins per head or catch)</p>
+            # of GOOMBAS slain? <input type="text" id="num1" placeholder="#">
             <img src="goomba.png">
         </div>
+        <br>
+        <br>
         <div class="box-2">  
             <h2>BOMB-OMB: Wanted Dead or Alive</h2>
             <p>(Princess Peach will pay 7-Coins per head or catch)</p>
+            # of BOMB-OMBS slain? <input type="text" id="num2" placeholder="#">
             <img src="bomb-omb.png">
         </div>
+        <br>
+        <br>
         <div class="box-3">     
             <h2>CHEEP-CHEEP: Wanted Dead or Alive </h2>
             <p>(Princess Peach will pay 11-Coins per head or catch)</p>
+            # of CHEEP-CHEEPS slain? <input type="text" id="num3" placeholder="#">
             <img src="cheep-cheep.png">
         </div>
-           
-        </ul>
+        <br>
+        <br>
+        <button onclick="calculate()">Calculate</button>
+        <h1 id="answer"></h1>
+        <footer>Mario's Email Address: mario@pest.net | marios-pest-control.net &reg; | 131131 South MoMo Circle, Peach City, PT 696969</footer>    
         <script src="mpc.js"></script>
     </body>
 </html>

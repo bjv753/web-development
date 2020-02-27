@@ -1,24 +1,65 @@
 body {
-    width: 300px;
-    margin: 20px auto;
+    background-color: whitesmoke;
+    text-align: center;
+    border-color: blue;
+    display: inline-block;
 }
+h1 {
+    background-color: blue;
+    color: white;
+    width: 1300px;
+    text-align: center;
 
-.circle{
-    display: flex;
-    background-color: rgb(255, 35, 35);
-    border-radius: 50%;
-    height: 55px;
-    width: 55px;
-    margin: 0;
-    background: radial-gradient(circle at 100px 100px, #9acbff, rgb(255, 30, 30));
-    background: radial-gradient(circle at 100px 100px, #78b9ff, rgb(255, 24, 24));
 }
-
-.box-1{
+div {
+    text-align: center;
+}
+h2 {
+    background-color: crimson;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+p {
+    background-color: crimson;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.box-1 {
     border-color: crimson;
     border-style: dashed;
     border-width: 25px;
     padding: 25px;
     margin: 50px;
     width: 1000px;
+}
+.box-2 {
+    border-color: crimson;
+    border-style: dashed;
+    border-width: 25px;
+    padding: 25px;
+    margin: 50px;
+    width: 1000px;
+}
+.box-3 {
+    border-color: crimson;
+    border-style: dashed;
+    border-width: 25px;
+    padding: 25px;
+    margin: 50px;
+    width: 1000px;
+}
+button{
+    display: flex;
+    justify-content: center;
+    border-color: blue;
+    width: 800px;
+    transform: translate(25%, -50%)
+  
+}
+footer {
+    position: absolute;
+    text-align: center;
+    width: 1300px;
 }
