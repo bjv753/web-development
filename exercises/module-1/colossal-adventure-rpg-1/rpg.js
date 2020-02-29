@@ -66,7 +66,7 @@ function enemyEncounter (){
     console.log(`You encountered ${enemy.name}`)
     let action = readline.keyIn('Would you like to fight [f], or run [r]?', {limit: 'fr'})
     if(action === 'r' ){
-        if(Math.random > .5){
+        if(Math.random() > .5){
             run()
         }else{
             console.log('sorry you were too slow')
@@ -110,4 +110,4 @@ function fight (enemy){
 }
 function run () {
     console.log('you got away')
-}
+}``
