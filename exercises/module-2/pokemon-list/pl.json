@@ -1,0 +1,9 @@
+{
+    name: 'Charmander',
+    resource_uri: 'api/v1/pokemon/8/'
+},
+{(Another pokemon object)},
+{(Another pokemon object)},
+{(Another pokemon object)},
+...
+etc.
