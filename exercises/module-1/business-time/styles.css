@@ -1,6 +1,31 @@
 * { 
   box-sizing: border-box;}
 
+#grid-container{
+  display: grid;
+  justify-content: space-evenly;
+}
+
+#search {
+    display: grid;
+    height: 25px;
+    width: 98.69%;
+    color: rgba(255, 0, 0, 0.3) ;
+    border: 2px solid 	#a5ffe1;
+    margin: 10px;
+    padding: 11px;
+    border-radius: 3%;
+  }
+  #search:hover {
+    border: 2px solid rgb(255, 212, 219);
+  }
+
+  .nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    color: black;
+  }
   head {
     display: center;
     background-color: darkgoldenrod;
@@ -11,6 +36,10 @@
 
   body {
   font-family: system-ui, BlinkMacSystemFont, 'Roboto', arial, sans-serif;
+  border-radius: 1px;
+  background-image: url(123.jpg);
+  background-size: 200px;
+  background: linear-gradient(to left, #00ffff 0%, #ffffda 100%);
   border-radius: 1px;
   }
 
@@ -35,28 +64,21 @@
     text-align: center;
     border-radius: 3px;
     font-size: 10px;
-    color: whitesmoke;
+    color: rgb(187, 170, 170);
   }
 
   h2 {
     font-size: 55px;
     text-align: center;
-    color: whitesmoke;
+    color: rgb(207, 182, 182);
   }
 
   a {
     display: inline-flex;
     position: relative;
     text-align: justify;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-  .nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    margin: 10px;
+    color: #d6bfbf;
   }
 
   img {
@@ -65,28 +87,24 @@
     margin-left: auto;
     margin-right: auto;
     max-height: 900px;
+    border-radius: 5%;
   }
 
-  body {
-    background-image: url(123.jpg);
-    background-size: 200px;
-    background-color:rgb(255, 255, 255);
-    border-radius: 1px;
-  }
-p {
+
+  p {
   font-size: 55px;
   text-align: center;
-  color: whitesmoke;
-}
+  color: rgb(199, 185, 185);
+  }
 
 #myHeader {
     font-family: system-ui, BlinkMacSystemFont, 'Roboto', arial, sans-serif;
     font-size: 50px;
-    background-color: rgb(0, 0, 0);
+    background: linear-gradient(to right, #ff99ff 0%, #ffffcc 100%);
     color: rgb(241, 238, 228);
-    margin: 20px;
+    margin: 10px;
     padding: 50px;
-    border-radius: 1px;
+    border-radius: 10px;
     text-align: center;
 
   } 
@@ -94,11 +112,12 @@ p {
   footer {
     font-family: system-ui, BlinkMacSystemFont, 'Roboto', arial, sans-serif;
     font-size: 50px;
-    background-color: 000000;
-    color: rgb(107, 106, 104);
+    background: linear-gradient(to right, #ff99ff 0%, #ffffcc 100%);
+    color: rgb(241, 238, 228);
     padding: 50px;
     margin: 20px;
     text-align: center;
+    border-radius: 10px;
   }
 
   
