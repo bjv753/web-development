@@ -1,0 +1,355 @@
+<!-- Check this site for a full list of keyboard key codes:
+
+https://css-tricks.com/snippets/javascript/javascript-keycodes/
+
+
+
+You're starting your business as a strictly online DJ (DJ JS) and you want to start by creating a website where people can change the color of a square on the page by interacting with different HTML Events.
+
+The square's color will change as follows:
+
+Blue when the mouse hovers over the square
+Red when the mouse button is held down over the square
+Yellow when the mouse button is let go over the square
+Green when the mouse is double clicked in the square
+Orange when the mouse scroll is used somewhere in the window (not just over the square).
+You should also be able to press the first letter of the colors (typing "r" on the keyboard for "red", for example) and have the box change to that color. -->
+
+<!-- We'll be beefing up our original DJ JS. (You'll still need to make this from scratch).
+
+This time around, we won't be focusing on javascript event listeners though. Instead, every event will happen on hover, which you can just use the CSS :hover pseudo-selector for. In other words, no JavaScript file required this time.
+
+Also, instead of one main box, you'll make 6 smaller boxes. Each one, when hovered, should change 2 or 3 different properties of the box that was hovered.
+
+You get to choose which properties change, but try to vary it between each box. Here's a non-exhaustive list of something you could change about each box:
+
+Background color
+Border (width, color, style)
+Border radius (can target each corner individually if you want)
+Box shadow
+Height/width
+Margin/padding (put some text inside to better see what's happening)
+Position
+Opacity
+ALSO, you must make each box smoothly transition from one style to another. (This is a CSS transitions practice, after all).
+
+Extra Credit
+Learn about the HTML5 <audio> tag and insert some music to play in the background. It's just like you're in the club!
+
+Have fun, and experiment with CSS transitions! -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>mezzoblue &sect; css Zen Garden Design List</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="robots" content="all" />
+	<meta name="author" content="Dave Shea" />
+	<meta name="description" content="mezzoblue: a weblog by dave shea, a web designer in vancouver, b.c., canada." />
+	<link rel="stylesheet" type="text/css" href="/css/fountain/undohtml.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="/css/fountain/layout-base.css?date=01-08-10a" media="all" />
+	<!--[if lte IE 6]>
+		<link rel="stylesheet" type="text/css" href="/css/fountain/ie6/quarantine.css" media="all" />
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="/css/fountain/layout-fixed.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="/css/fountain/colour.php?colour=foxglacier&amp;date=01-08-10a" media="all" />
+	<link rel="stylesheet" type="text/css" href="/css/fountain/zen/base.css" media="all" />
+	<link rel="Shortcut Icon" type="image/ico" href="http://www.mezzoblue.com/favicon.ico" />
+	<!--<link rel="alternate" type="application/rss+xml" title="Full Atom Feed" href="http://www.mezzoblue.com/feeds/index.xml" />-->
+	<link rel="alternate" type="application/rss+xml" title="Posts-only Atom Feed" href="http://www.mezzoblue.com/feeds/index-posts.xml" />
+
+	<link rel="apple-touch-icon" href="/icons/mb-touch-icon.png" />
+
+
+
+</head>
+
+
+<body id="mezzoblue-com" class="zen">
+
+<div id="accessibility">
+	<p>Skip to: <a href="#primary-nav">Navigation</a> | <a href="#main-content">Content</a> | <a href="#sidebar">Sidebar</a> | <a href="#footer">Footer</a></p>
+</div>
+
+<div id="container"><div class="wrap1"><div class="wrap2">
+
+<div id="header"><div class="wrapper-main"><div class="wrapper-deco">
+	<div id="header-meta"><div class="wrapper1"><div class="wrapper2"><div class="wrapper-shadow">
+		<h1><a href="/">mezzoblue</a></h1>
+		<p><abbr title="International Standard Serial Number">ISSN</abbr> #1708-0789</p>
+	</div></div></div></div><!-- /header-meta -->
+	<div id="primary-nav">
+		<ul>
+			<li class="home"><a href="/">Home</a></li>
+			<li class="archives"><a href="/archives/">Archives</a></li>
+			<li class="icons"><a href="/icons/">Icons</a></li>
+			<li class="about"><a href="/about/">About</a></li>
+			<li class="contact"><a href="/contact/">Contact</a></li>
+		</ul>
+	</div><!-- /primary-nav -->
+
+
+</div></div></div><!-- /header -->
+
+
+<hr class="hide" />
+
+
+<div id="page-body">
+<div id="main-content"><div class="wrapper">
+
+	<span class="z-title">css Zen Garden</span>
+	
+	<h2>Design List <span class="count">1/19</span></h2>
+	<p>This page is an archived list of Zen Garden designs added to date. You can also see the ones that <a href="/zengarden/alldesigns/others/">didn&#8217;t make the cut</a>. Total designs listed: <strong>218</strong></p>
+	<div id="main-column" class="official">
+	<div class="pager">
+	<ul>
+	<li class="current"><a href="/zengarden/alldesigns/">1</a></li>
+	<li><a href="/zengarden/alldesigns/page2/">2</a></li>
+	<li><a href="/zengarden/alldesigns/page3/">3</a></li>
+	<li><a href="/zengarden/alldesigns/page4/">4</a></li>
+	<li><a href="/zengarden/alldesigns/page5/">5</a></li>
+	<li><a href="/zengarden/alldesigns/page6/">6</a></li>
+	<li><a href="/zengarden/alldesigns/page7/">7</a></li>
+	<li><a href="/zengarden/alldesigns/page8/">8</a></li>
+	<li><a href="/zengarden/alldesigns/page9/">9</a></li>
+	<li><a href="/zengarden/alldesigns/page10/">10</a></li>
+	<li><a href="/zengarden/alldesigns/page11/">11</a></li>
+	<li class="arrow"><a href="/zengarden/alldesigns/page19/">&raquo;</a></li>
+	</ul>
+	</div>
+	<ul class="row">
+	<li class="first">
+	<div class="preview">
+		<a href="http://www.csszengarden.com/?cssfile=/221/221.css"><img src="/zengarden/screenshots/221.jpg" width="160" height="104" alt="Mid Century Modern" /></a>
+		<span class="numero">221</span>
+	</div>
+	<h3><a href="http://www.csszengarden.com/?cssfile=221/221.css">Mid Century Modern</a></h3>
+	<p><a href="http://www.andrewlohman.com/">Andrew Lohman</a>, <span class="country">United States</span></p>
+	</li>
+	<li class="second">
+	<div class="preview">
+		<a href="http://www.csszengarden.com/?cssfile=/220/220.css"><img src="/zengarden/screenshots/220.jpg" width="160" height="104" alt="Garments" /></a>
+		<span class="numero">220</span>
+	</div>
+	<h3><a href="http://www.csszengarden.com/?cssfile=220/220.css">Garments</a></h3>
+	<p><a href="http://www.danielmall.com/">Dan Mall</a>, <span class="country">United States</span></p>
+	</li>
+	<li class="third">
+	<div class="preview">
+		<a href="http://www.csszengarden.com/?cssfile=/219/219.css"><img src="/zengarden/screenshots/219.jpg" width="160" height="104" alt="Steel" /></a>
+		<span class="numero">219</span>
+	</div>
+	<h3><a href="http://www.csszengarden.com/?cssfile=219/219.css">Steel</a></h3>
+	<p><a href="http://steffen-knoeller.de">Steffen Knoeller</a>, <span class="country">Germany</span></p>
+	</li>
+	</ul>
+	<ul class="row">
+	<li class="first">
+	<div class="preview">
+		<a href="http://www.csszengarden.com/?cssfile=/218/218.css"><img src="/zengarden/screenshots/218.jpg" width="160" height="104" alt="Apothecary" /></a>
+		<span class="numero">218</span>
+	</div>
+	<h3><a href="http://www.csszengarden.com/?cssfile=218/218.css">Apothecary</a></h3>
+	<p><a href="http://trentwalton.com/">Trent Walton</a>, <span class="country">United States</span></p>
+	</li>
+	<li class="second">
+	<div class="preview">
+		<a href="http://www.csszengarden.com/?cssfile=/217/217.css"><img src="/zengarden/screenshots/217.jpg" width="160" height="104" alt="Handcrafted" /></a>
+		<span class="numero">217</span>
+	</div>
+	<h3><a href="http://www.csszengarden.com/?cssfile=217/217.css">Handcrafted</a></h3>
+	<p><a href="http://www.elliotjaystocks.com/">Elliot Jay Stocks</a>, <span class="country">United Kingdom</span></p>
+	</li>
+	<li class="third">
+	<div class="preview">
+		<a href="http://www.csszengarden.com/?cssfile=/216/216.css"><img src="/zengarden/screenshots/216.jpg" width="160" height="104" alt="Fountain Kiss" /></a>
+		<span class="numero">216</span>
+	</div>
+	<h3><a href="http://www.csszengarden.com/?cssfile=216/216.css">Fountain Kiss</a></h3>
+	<p><a href="http://jeremycarlson.com/">Jeremy Carlson</a>, <span class="country">United States</span></p>
+	</li>
+	</ul>
+	<ul class="row">
+	<li class="first">
+	<div class="preview">
+		<a href="http://www.csszengarden.com/?cssfile=/215/215.css"><img src="/zengarden/screenshots/215.jpg" width="160" height="104" alt="A Robot Named Jimmy" /></a>
+		<span class="numero">215</span>
+	</div>
+	<h3><a href="http://www.csszengarden.com/?cssfile=215/215.css">A Robot Named Jimmy</a></h3>
+	<p><a href="http://meltmedia.com/">meltmedia</a>, <span class="country">United States</span></p>
+	</li>
+	<li class="second">
+	<div class="preview">
+		<a href="http://www.csszengarden.com/?cssfile=/214/214.css"><img src="/zengarden/screenshots/214.jpg" width="160" height="104" alt="Verde Moderna" /></a>
+		<span class="numero">214</span>
+	</div>
+	<h3><a href="http://www.csszengarden.com/?cssfile=214/214.css">Verde Moderna</a></h3>
+	<p><a href="http://www.mezzoblue.com/">Dave Shea</a>, <span class="country">Canada</span></p>
+	</li>
+	<li class="third">
+	<div class="preview">
+		<a href="http://www.csszengarden.com/?cssfile=/213/213.css"><img src="/zengarden/screenshots/213.jpg" width="160" height="104" alt="Under the Sea!" /></a>
+		<span class="numero">213</span>
+	</div>
+	<h3><a href="http://www.csszengarden.com/?cssfile=213/213.css">Under the Sea!</a></h3>
+	<p><a href="http://www.ericstoltz.com">Eric Stoltz</a>, <span class="country">United States</span></p>
+	</li>
+	</ul>
+	<ul class="row">
+	<li class="first">
+	<div class="preview">
+		<a href="http://www.csszengarden.com/?cssfile=/212/212.css"><img src="/zengarden/screenshots/212.jpg" width="160" height="104" alt="Make ’em Proud!" /></a>
+		<span class="numero">212</span>
+	</div>
+	<h3><a href="http://www.csszengarden.com/?cssfile=212/212.css">Make ’em Proud!</a></h3>
+	<p><a href="http://skybased.com">Michael McAghon and Scotty Reifsnyder</a>, <span class="country">United States</span></p>
+	</li>
+	<li class="second">
+	<div class="preview">
+		<a href="http://www.csszengarden.com/?cssfile=/211/211.css"><img src="/zengarden/screenshots/211.jpg" width="160" height="104" alt="Orchid Beauty" /></a>
+		<span class="numero">211</span>
+	</div>
+	<h3><a href="http://www.csszengarden.com/?cssfile=211/211.css">Orchid Beauty</a></h3>
+	<p><a href="http://www.kevinaddison.com">Kevin Addison</a>, <span class="country">United States</span></p>
+	</li>
+	<li class="third">
+	<div class="preview">
+		<a href="http://www.csszengarden.com/?cssfile=/210/210.css"><img src="/zengarden/screenshots/210.jpg" width="160" height="104" alt="Oceanscape" /></a>
+		<span class="numero">210</span>
+	</div>
+	<h3><a href="http://www.csszengarden.com/?cssfile=210/210.css">Oceanscape</a></h3>
+	<p><a href="http://www.pixel-house.com.au">Justin Gray</a>, <span class="country">Australia</span></p>
+	</li>
+	</ul>
+	<div class="pager">
+	<ul>
+	<li class="current"><a href="/zengarden/alldesigns/">1</a></li>
+	<li><a href="/zengarden/alldesigns/page2/">2</a></li>
+	<li><a href="/zengarden/alldesigns/page3/">3</a></li>
+	<li><a href="/zengarden/alldesigns/page4/">4</a></li>
+	<li><a href="/zengarden/alldesigns/page5/">5</a></li>
+	<li><a href="/zengarden/alldesigns/page6/">6</a></li>
+	<li><a href="/zengarden/alldesigns/page7/">7</a></li>
+	<li><a href="/zengarden/alldesigns/page8/">8</a></li>
+	<li><a href="/zengarden/alldesigns/page9/">9</a></li>
+	<li><a href="/zengarden/alldesigns/page10/">10</a></li>
+	<li><a href="/zengarden/alldesigns/page11/">11</a></li>
+	<li class="arrow"><a href="/zengarden/alldesigns/page19/">&raquo;</a></li>
+	</ul>
+	</div>
+	</div>
+ 	<div class="zen-footer">
+		<a href="http://www.csszengarden.com/">Return to the CSS Zen Garden</a>  |  
+		<a href="/">mezzoblue Home </a>
+	</div>
+
+
+
+
+	
+</div></div><!-- /main-content -->
+
+<hr class="hide" />
+
+<div id="sidebar"><div class="wrapper">
+	<span class="deco"></span>
+
+	<form id="searchbox_014370464660114218422:3bsmd0uqhiu" class="searchBox" action="http://www.google.com/cse">
+		<div>
+			<input type="hidden" name="cx" value="014370464660114218422:3bsmd0uqhiu" />
+			<input type="hidden" name="cof" value="FORID:0" />
+
+			<label for="search">Search this site:</label>
+			<input size="20" name="q" id="search" />
+
+			<input name="sa" type="image" src="/i/fountain/b-search.png" class="button" alt="Search" id="search-button" />
+			<!--[if lte IE 6]>
+			<input name="sa" type="image" src="/i/fountain/b-search.gif" class="button" alt="Search" />
+			<![endif]-->
+		</div>
+	</form>
+
+
+	<div class="zen-garden">
+			<div class="zen-nav sidebar-nav">
+	<ul class="selected-alldesigns">
+		<li class="zg-home"><a href="http://www.csszengarden.com/">css Zen Garden</a></li>
+		<li class="zg-all"><a href="/zengarden/alldesigns/">All Designs</a></li>
+		<li class="zg-faq"><a href="/zengarden/faq/">FAQ</a></li>
+		<li class="zg-resources"><a href="/zengarden/resources/">Resources</a></li>
+		<li class="zg-languages"><a href="/zengarden/translations/">Languages</a></li>
+		<li class="zg-submit"><a href="/zengarden/submit/">Submit</a></li>
+	</ul>
+		</div>
+	<div class="zen-rss">
+		<h2>RSS Feeds</h2>
+		<p>For automatic notification when the css Zen Garden updates, there are two RSS feeds available:</p>
+		<p><a class="rss-feed" href="/zengarden/rss/official.xml">Official Designs</a></p>
+		<p><a class="rss-feed" href="/zengarden/rss/news.xml">News Updates</a></p>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="module zen-book">
+		<h2><a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20" class="booklink">The Zen of CSS Design</a></h2>
+		<a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20"><img src="/i/fountain/zen-book.gif" alt="The Zen of CSS Design" width="64" height="70" /></a>
+		<p>Dave Shea &amp; Molly Holzschlag</p>
+		<p>New Riders, 2005</p>
+		
+		<h3>Book Link List</h3>
+		<p>Tired of typing in all the links we reference in the book? Check out the <a href="/zengarden/book/links/">book link list</a>.</p>
+
+		<p class="get-it">Get it: 
+			<a href="http://www.amazon.ca/exec/obidos/ASIN/0321303474/">CA</a> <span class="sep">|</span>
+			<a href="http://www.amazon.de/exec/obidos/ASIN/3827322766/qid%3D1122234512/028-2383469-4681338">DE</a> <span class="sep">|</span>
+			<a href="http://www.amazon.fr/exec/obidos/ASIN/2212116993/">FR</a> <span class="sep">|</span>
+			<a href="http://helion.pl/ksiazki/zencss.htm">PL</a> <span class="sep">|</span>
+			<a href="http://www.ozon.ru/context/detail/id/2433755/">RU</a> <span class="sep">|</span>
+			<a href="http://www.amazon.co.uk/exec/obidos/ASIN/0321303474/">UK</a> <span class="sep">|</span>
+			<a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20">US</a>
+		</p>
+
+		
+	</div>
+
+
+
+
+
+
+
+
+</div></div><!-- /sidebar -->
+</div><!-- /page-body -->
+
+
+<hr class="hide" /><div id="footer"><div class="wrapper1"><div class="wrapper2"><div class="wrapper3">
+	<div class="deco1"></div><div class="deco2"></div>
+	<p>&copy; Copyright 2001&#8211;2020, <a href="/about/dave/">Dave Shea</a> 
+		<span class="media">| 
+			screen version | 
+			<a href="?media=mobile" rel="nofollow">mobile</a> | 
+			<a href="?media=tv" rel="nofollow">tv</a></span>
+	</p>
+	<ul class="site-nav">
+		<li class="first"><a href="/">Home</a></li>
+		<li><a href="/archives/2011/">Archives</a></li>
+		<li><a href="/icons/chalkwork/">Icons</a></li>
+		<li><a href="/about/">About</a></li>
+		<li><a href="/contact/">Contact</a></li>
+	</ul>
+
+
+</div></div></div></div><!-- /Footer -->
+
+</div></div></div><!-- /container -->
+
+</body>
+</html>
