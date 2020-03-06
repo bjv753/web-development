@@ -1,44 +1,54 @@
-1) Sort an array from smallest number to largest
 
-const arr = [1, 3, 5, 2, 90, 20]
 
-const result = arr.sort()
+// 1) Sort an array from smallest number to largest
 
-console.log(result)
+// const arr = [1, 3, 5, 2, 90, 20]
 
-2) Sort an array from largest number to smallest
+// const result = arr.sort()
 
-const arr = [1, 3, 5, 2, 90, 20]
+// console.log(result)
 
-const result = arr.sort()
+// 2) Sort an array from largest number to smallest
 
-console.log(result)
+// const arr = [1, 3, 5, 2, 90, 20]
 
-3) Sort an array from shortest string to longest
+// const result = arr.sort(function(b, a){
+//     return a - b
+// })
 
-const arr = ["dog", "wolf", "by", "family", "eaten"]
+// console.log(result)
 
-const result = arr.sort()
+// 3) Sort an array from shortest string to longest
 
-console.log(result)
+// const arr = ["dog", "wolf", "by", "family", "eaten"]
 
-4) Sort an array alphabetically
+// const result = function(sorted){
+//     return sorted.sort((strA, strB)=>{
+//         return strA.length - strB.length
+//     })
+// }
 
-const arr = ["dog", "wolf", "by", "family", "eaten"]
+// console.log(result(arr))
 
-const result = arr.sort()
+// 4) Sort an array alphabetically
 
-console.log(result)
+// const arr = ["dog", "wolf", "by", "family", "eaten"]
 
-5) Sort the objects in the array by age
+// const result = arr.sort((a, b) => {
+//     return (a > b) ? 1 : -1      
+// })
 
-const arr = [
-    { name: "Quiet Samurai", age: 22 },
-    { name: "Arrogant Ambassador", age: 100 },
-    { name: "Misunderstood Observer", age: 2 },
-    { name: "Unlucky Swami", age: 77 }
-]
+// console.log(result)
 
-const result = arr.sort()
+// 5) Sort the objects in the array by age
 
-console.log(result)
+// const people = [
+//     { name: "Quiet Samurai", age: 22 },
+//     { name: "Arrogant Ambassador", age: 100 },
+//     { name: "Misunderstood Observer", age: 2 },
+//     { name: "Unlucky Swami", age: 77 }
+// ]
+
+// people.sort((a, b) => a.age - b.age)
+
+// console.log(people)

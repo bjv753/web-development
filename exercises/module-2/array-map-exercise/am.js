@@ -1,25 +1,30 @@
-// 1.
+// 1. Make an array of numbers that are doubles of the first array
 // const arr = [9,8,7,6,5,4,3,2,1,0]
 
 // const result = arr.map(x => x*2)
 
 // console.log(result)
 
-// 2.
+// 2. Take an array of numbers and make them strings
 // const arr = [2, 5, 100]
 
-// const result = arr.map(x => x === number to str)
+
+// const result = arr.map(num => num + "")
 
 // console.log(result)
 
-// 3.
-// const arr = ["john", "JACOB", "jinGleHeimer", "schmidt"]
+// 3.  Capitalize each of an array of names
+// var longStr = 'the quick brown fox jumed over the lazy dog'
 
-// const result = arr.map(x => x === str of cap names)
+// var capitalizeString = (str) => str[0]
+// .toUpperCase() + str.slice(1).toLowerCase();
 
-// console.log(result)
+// var words = longStr.split(' ').map(capitalizeString);
 
-// .4
+// console.log(words)
+
+
+// .4 Make an array of strings of the names
 // const arr = [
 //     {
 //         name: "Angelina Jolie",
@@ -43,11 +48,12 @@
 //     }
 // ] 
 
-// const namesOnly = arr.filter(x => x.name)
+// const namesOnly = arr.map(x => x.name)
 
 // console.log(namesOnly)
 
-// 5.
+// 5. Make an array of strings of the names saying whether or not they can go to The Matrix
+
 // const matrixCandies =
 
 // [
@@ -73,11 +79,18 @@
 //     }
 // ]
 
-// const candies = matrixCandies.filter(can => can.age >= 18)
+// const candies = matrixCandies.map(function(candy){
+//     if(candy.age >= 18){
+//         return candy.name + " is old enough to enter the Matrix!"
+//     } else {
+//         return candy.name + " is not old enough to enter the Matrix!"
+//     }
+    
+// })
 
 // console.log(candies)
 
-// 6.
+// 6. Make an array of the names in h1s, and the ages in h2s
 // const arr = [
 //     {
 //         name: "Angelina Jolie",
@@ -101,7 +114,10 @@
 //     }
 // ]
 
-// const result = arr.map(x => x names in <h1>s && <h2>s)
+// const result = arr.map(function(user){
+//     return `<h1>${user.name}</h1><h2>${user.age}</h2>`
+    
+// })
 
 // console.log(result)
 
