@@ -1,0 +1,162 @@
+Top 10 ES6 features by example
+
+Through ES6 specification is not super-fresh, I think that many developers 
+are still not so familiar with it. The main reason is probably poor support in
+web browsers just after specification release. Currently, the specification is
+over 2 years old, and a lot of modern web browsers work well with ES6.
+Even if you (or your clients) don't use the most recent version of web
+browser, you can use transpilers (like Babel), which transforms ES6 sources
+to ES5 sources durring the build process of the application. It means that it's
+about time to make one step forward and learn ES6.
+
+In this article, I will try to introduce the most useful feature in a succinct
+way. After the tutorial, you will possess basic skills and be able to apply 
+them in a real project. Don't treat it as a guide or documentation. My goal is
+to encourage you to dig deeper and get familiar with ES6.
+
+
+Let's start
+
+
+1.const and let keywords
+
+const enables you to define constants (finally!). let enables you to define
+variables. That's great, but don't we have variables in JavaScript already?
+Yes, that's true, but variables declared by var have function scope and are
+hoisted to the top. It means that a variable can be used before it has been
+declared. let variables and constants have block scope (surrounded by {})
+and cannot be used before declaration.
+
+code block scope === code inside {block scope curly brackets}
+
+code function scope === code outside of {block scope curly brackets}
+
+function f() {
+    var x = 1
+    let y = 2
+    const z = 3
+    {
+        var x = 100
+        let y = 200
+        const z = 300
+        console.log('x in block scope is', x)
+        console.log('y in block scope is', y)
+        console.log('z in block scope is', z)
+    }
+    console.log('x outside of block scope is', x)
+    console.log('y outside of block scope is', y)
+    console.log('z outside of block scope is', z)
+}
+
+f() 
+
+outputs:
+
+x in block scope is 100
+y in block scope is 200
+z in block scope is 300
+because block scope overrides function scope, x outside of block scope is 100
+y outside of block scope is 2
+z outside of block scope is 3
+
+--------------------------------------------------------------------------------------------------
+
+2.Array helper functions
+New cool helper functions appeared, which facilitate work with JS arrays
+in most useful cases. How many times did you implement logic like:
+filtering, checking if any or all elements meet the condition, or elements
+conversion? Probably very often. Now you have great language features to 
+do the work for you. Here, in my opinion, are the most valuable functions:
+
+--------------------------------------------------------------------------------------------------
+
+forEach
+
+Executes the provided function for each element of the array, passing the 
+array element as an argument.
+
+var colors = ['red', 'green', 'blue',]
+
+function print(val) {
+    console.log(val)
+}
+
+colors.forEach(print)
+
+outputs:
+
+red
+green
+blue
+
+--------------------------------------------------------------------------------------------------
+
+map 
+
+
+Creates an new array containing the same numbers of elements, but output
+elements are created by the provided function. Map just converts each array
+element to something else.
+
+var colors = ['red', 'green', 'blue']
+
+function capitalize(val) {
+    return val.toUpperCase()
+}
+
+var capitalizedColors = colors.map(capitalize)
+
+
+console.log(capitalizedColors)
+
+outputs:
+
+[ 'RED', 'GREEN', 'BLUE' ]
+
+--------------------------------------------------------------------------------------------------
+
+filter
+
+Creates a new array containing a subset of the original array. The result
+has these elements that pass the test implemented by the provided
+function, which should return true or false.
+
+var values = [1, 60, 34, 30, 20, 5]
+
+function lessThan20(val) {
+    return val < 20
+}
+
+var valuesLessThan20 = values.filter(lessThan20)
+
+
+console.log(valuesLessThan20)
+
+outputs: [1.5]
+
+--------------------------------------------------------------------------------------------------
+
+find
+
+Finds the first element that passes the test implemented by the provided
+function, which should return true or false.
+
+var people = [
+    {name: 'Jack', age: 50},
+    {name: 'Michael', age: 9},
+    {name: 'John', age: 40},
+    {name: 'Elizabeth', age: 16}
+]
+
+function teenager(person)  {
+    return person.age > 10 && person.age < 20
+}
+
+
+var firstTeenager = people.find(teenager)
+
+
+console.log('First found teenager:', firstTeenager.name)
+
+--------------------------------------------------------------------------------------------------
+

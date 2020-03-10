@@ -5,9 +5,13 @@ const add = (num1, num2) => {
   console.log(`The answer is: ${num1 + num2}`);
 };
 // A function that subtracts two numbers and returns the result
+// A function that subtracts two numbers and returns the result
 const subtract = (num1, num2) => {
   console.log(`The answer is: ${num1 - num2}`);
 };
+const subtract = (num1, num2) => {
+  console.log(`The answer is: ${}`)
+}
 // A function that multiplies two numbers and returns the result
 const multiply = (num1, num2) => {
   console.log(`The answer is: ${num1 * num2}`);

@@ -91,34 +91,34 @@
 // console.log(candies)
 
 // 6. Make an array of the names in h1s, and the ages in h2s
-// const arr = [
-//     {
-//         name: "Angelina Jolie",
-//         age: 80
-//     },
-//     {
-//         name: "Eric Jones",
-//         age: 2
-//     },
-//     {
-//         name: "Paris Hilton",
-//         age: 5
-//     },
-//     {
-//         name: "Kayne West",
-//         age: 16
-//     },
-//     {
-//         name: "Bob Ziroll",
-//         age: 100
-//     }
-// ]
+const arr = [
+    {
+        name: "Angelina Jolie",
+        age: 80
+    },
+    {
+        name: "Eric Jones",
+        age: 2
+    },
+    {
+        name: "Paris Hilton",
+        age: 5
+    },
+    {
+        name: "Kayne West",
+        age: 16
+    },
+    {
+        name: "Bob Ziroll",
+        age: 100
+    }
+]
 
-// const result = arr.map(function(user){
-//     return `<h1>${user.name}</h1><h2>${user.age}</h2>`
+const result = arr.map(function(user){
+    return `<h1>${user.name}</h1><h2>${user.age}</h2>`
     
-// })
+})
 
-// console.log(result)
+console.log(result)
 
 

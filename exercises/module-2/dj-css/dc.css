@@ -1,6 +1,80 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
 
-.box{
+
+.grid-box1{
     height: 444px;
     width: 444px;
-    background-color: red;
+    background-color: rgb(255, 175, 129);
+    transition: background-color .5s linear .5s, border-radius .5s linear;
+    
+}
+
+.grid-box1:hover {
+    background-color:  rgb(129, 240, 255);
+    border-radius: 50%;
+    box-shadow: rgb(0, 0, 0);
+}
+
+.grid-box2{
+    height: 444px;
+    width: 444px;
+    background-color: rgb(247, 255, 128);
+    transition: background-color .5s linear .5s, border-radius .5s linear;
+}
+
+.grid-box2:hover {
+    background-color:  rgb(215, 129, 255);
+    border-radius: 50%;
+}
+
+.grid-box3{
+    height: 444px;
+    width: 444px;
+    background-color: rgb(128, 255, 238);
+    transition: background-color .5s linear .5s, border-radius .5s linear;
+}
+
+.grid-box3:hover {
+    background-color:  rgb(255, 129, 129);
+    border-radius: 50%;
+}
+
+.grid-box4{
+    height: 444px;
+    width: 444px;
+    background-color: rgb(182, 126, 255);
+    transition: background-color .5s linear .5s, border-radius .5s linear;
+}
+
+.grid-box4:hover {
+    background-color:  rgb(247, 255, 129);
+    border-radius: 50%;
+}
+
+.grid-box5{
+    height: 444px;
+    width: 444px;
+    background-color: rgb(255, 129, 234);
+    transition: background-color .5s linear .5s, border-radius .5s linear;
+}
+
+.grid-box5:hover {
+    background-color:  rgb(129, 255, 135);
+    border-radius: 50%;
+}
+
+.grid-box6{
+    height: 444px;
+    width: 444px;
+    background-color: rgb(255, 126, 126);
+    transition: background-color .5s linear .5s, border-radius .5s linear;
+}
+
+.grid-box6:hover {
+    background-color:  rgb(129, 255, 255);
+    border-radius: 50%;
 }
