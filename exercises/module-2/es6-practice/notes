@@ -160,3 +160,106 @@ console.log('First found teenager:', firstTeenager.name)
 
 --------------------------------------------------------------------------------------------------
 
+every 
+
+Checks if every element of the array passes the test implemented by the provided
+function, which should return true or false.
+
+var people = [
+    {name: 'Jack', age: 50},
+    {name: 'Michael', age: 9},
+    {name: 'John', age: 40},
+    {name: 'Ann', age: 19},
+    {name: 'Elizabeth', age: 16}
+]
+
+function teenager(person) {
+    return person.age > 10 && person.age < 20
+}
+
+var everyoneIsTeenager = people.every(teenager)
+
+console.log('Everyone is teenager: ', everyoneIsTeenager)
+
+--------------------------------------------------------------------------------------------------
+
+some 
+
+Checks if any element of the array passes the test implemented by the provided
+function, which should return true or false.
+
+var people = [
+    {name: 'Jack', age: 50}
+    {name: 'Michael', age: 9}
+    {name: 'John', age: 40}
+    {name: 'Ann', age: 19}
+    {name: 'Elizabeth', age: 16}
+]
+
+function teenager(person){
+    return person.age > 10 && person.age < 20
+}
+
+var thereAreTeenagers = people.some(teenager)
+
+console.log('There are teenagers:', thereAreTeenagers)
+
+
+--------------------------------------------------------------------------------------------------
+
+reduce
+
+var arr = [1, 2, 3, 4]
+
+function sum(acc, value) {
+    return acc + value
+}
+
+function product(acc, value) {
+    return acc * value
+}
+
+var sumOfArrayElements = array.reduce(sum, 0)
+var productOfArrayElements = array.reduce(product, 1)
+
+console.log('Sum of', array, 'is', sumOfArrayElements)
+
+--------------------------------------------------------------------------------------------------
+
+3. Arrow functions
+
+Implementation of very simple functions (like the aforementioned sum or product)
+requires writing a lot of boilerplate. Is there any remedy for that? Yes, just try Arrow
+functions!
+
+var array = [1, 2, 3, 4]
+
+
+const sum = (acc, value) => acc + value
+const product = (acc, value) => acc * value
+
+var sumOfArrayElements = array.reduce(sum, 0)
+var productOfArrayElements = array.reduce(product, 1)
+
+--------------------------------------------------------------------------------------------------
+
+4. Classes 
+
+Which Java developer doesn't miss classes when switching to a JS project? Who
+doesn't like explicit inheritance, like in Java language, instead of writing magic code
+for prototypal inheritance? Although some JS developers complained, classes have
+been introduced in ES6. They don't change the concept of inheritance. They are just
+syntactic sugar for prototypal inheritance.
+
+class Point {
+    constructor(x, y) {
+        this.x = x
+        this.y = y 
+    }
+
+    toString() {
+        return '[X=' + this.x + ', Y=' + this.y + ']'
+    }
+}
+
+
