@@ -250,10 +250,124 @@
 // 7. Default function arguments
 // Don't you like providing all possible function parameters? Use defaults.
 
-function sort(arr = [], direction = 'ascending') {
-    console.log('I\'m going to sort the array', arr, direction)
-}
+// function sort(arr = [], direction = 'ascending') {
+//     console.log('I\'m going to sort the array', arr, direction)
+// }
 
-sort([1, 2, 3])
-sort([1, 2, 3], 'descending')
+// sort([1, 2, 3])
+// sort([1, 2, 3], 'descending')
 
+// console.log(sort)
+
+// --------------------------------------------------------------------------------------------------
+
+// 8. Rest and Spread operators
+
+// Spread 
+
+// It enables extraction of array or object content as single elements.
+
+// Example -- make shallow copy of array:
+
+// var array = ['red', 'blue', 'green']
+// var x = [...array]
+
+// console.log(x)
+
+// --------------------------------------------------------------------------------------------------
+
+// Rest
+
+// Would you like to bind the first few function parameters to variables, and
+// others to single variables as an array? Now you can do it quite easily.
+
+// function printColors(first, second, third, ...others) {
+//     console.log('Top three colors are ' + first + ', ' + second + ' and ' + third + '. Others are: ' + others)
+// }
+// printColors('yellow', 'blue', 'orange', 'white', 'black', 'pink', 'green')
+
+// --------------------------------------------------------------------------------------------------
+
+// 9. Destructuring
+
+// Of array
+
+// Enables extraction of requested elements from the array and assigning them
+// to variables.
+
+// function printFirstAndSecondElement([first, second]) {
+//     console.log('First element is ' + first + ', second is ' + second)
+// }
+
+// function printSecondAndFourthElement([, second, , fourth]) {
+//     console.log('Second element is ' + second + ', fourth is ' + fourth)
+// }
+
+// var array = [1, 2, 3, 4, 5]
+
+// printFirstAndSecondElement(array)
+// printSecondAndFourthElement(array)
+
+// console.log(printFirstAndSecondElement(array))
+// console.log(printSecondAndFourthElement(array))
+
+// Of object
+
+// Enables extraction of requested properties from the object and assigning them
+// to variables of the same name as properties.
+
+// function printBasicInfo({firstName, secondName, profession}) {
+//     console.log(firstName + ' ' + secondName + ' - ' + profession)
+// }
+
+// var person = {
+//     firstName: 'John',
+//     secondName: 'Smith',
+//     age: 33,
+//     children: 3,
+//     profession: 'teacher'
+// }
+
+// console.log(printBasicInfo(person))
+
+// --------------------------------------------------------------------------------------------------
+
+// 10. Promises
+
+/* Promise promises (yes, I know it sounds weird) that you would get in future
+ results of deferred or long-running tasks. Promise has two channels: the first
+ for results, the second for potential errors. To get the result, you provide the
+ callback function as the 'then' function parameter. To handle errors, you
+ provide the callback function as the 'catch' function parameter.
+ 
+ Please notice that output of the example might differ for each execution,
+ because of random function call.*/
+
+//  function asyncFunc() {
+//      return new Promise((resolve, reject) => {
+//          setTimeout(() => {
+//              const result = Math.random();
+//              result > 0.5 ? resolve(result) : reject('Oppps....I cannot calculate')
+//          }, 1)
+//      });
+//  }
+
+//  for (let i=0; i<10; i++) {
+//      asyncFunc()
+//      .then(result => console.log('Result is: ' + result))
+//      .catch(result => console.log('Error: ' + result))
+//  }
+
+// --------------------------------------------------------------------------------------------------
+
+/* Summary
+
+I hope you enjoyed the article. If you want some practice, you can use the
+sandbox for the learning process: https://es6console.com/. If you need more
+information, you can find it here: 
+
+    + https://github.com/lukehoban/es6features
+    
+    + https://exploringjs.com/es6
+    
+*/

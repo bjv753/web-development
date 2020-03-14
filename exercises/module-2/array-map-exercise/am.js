@@ -114,10 +114,9 @@ const arr = [
     }
 ]
 
-const result = arr.map(function(user){
-    return `<h1>${user.name}</h1><h2>${user.age}</h2>`
+const result = arr.map(user => `<h1>${user.name}</h1><h2>${user.age}</h2>`
     
-})
+)
 
 console.log(result)
 

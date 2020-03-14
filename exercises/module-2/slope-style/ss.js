@@ -3,53 +3,71 @@
 
 // Use the Rest Operator to help this function return an array of animals, no matter how many animals are passed to it:
 
+// var collectAnimals =["dog", "cat", "mouse", "jackolope", "platypus"]; 
 
-function collectAnimals(/*your code here*/) {  
-    /*and here*/ 
-}
+// var x = [...collectAnimals]
 
-collectAnimals("dog", "cat", "mouse", "jackolope", "platypus"); 
-// ["dog", "cat", "mouse", "jackolope", "platypus"]
+// console.log(x)
 
+// ------------------------------------------------------------------------------------------------------------------------------
 
 // Write a function that returns a food object with the array names as properties using Object Literals:
 
-function combineFruit(fruit, sweets, vegetables){
-    return {}
-}
+// const combineFruit = (fruit, sweets, vegetables) => ({fruit,sweets,vegetables})
 
-combineFruit(["apple", "pear"],
-             ["cake", "pie"],
-             ["carrit"])
 
-// Use destructuring to use the property names as variables. Desructure the object in the parameter:
+// console.log(combineFruit(["apple", "pear"],
+//              ["cake", "pie"],
+//              ["carrit"]))
 
-const vacation = {  
-    location: "Burly Idaho",
-    duration: "2 weeks"
-  };
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// // Use destructuring to use the property names as variables. Desructure the object in the parameter:
+
+ 
+// const vacation = {  
+//     location: "Burly Idaho",
+//     duration: "2 weeks"
+//   };
   
-  function parseSentence(_________){
-    return `We're going to have a good time in ${location} for ${duration}`
-  }
+//   function parseSentence(place){
+//     return `We're going to have a good time in ${place.location} for ${place.duration}`
+//   }
+
+//   const vacation = {
+//       location: 'Burly Idaho',
+//       duration: '2 weeks'
+//   };
+
+//  const parseSentence = ({location, duration}) => `We're going to hava a good time in ${location} for ${duration}`
+
+//  console.log(parseSentence(vacation))
   
+// ------------------------------------------------------------------------------------------------------------------------------
 
-// Use destructuring to make this code ES6:
+// // Use destructuring to make this code ES6:
 
-function returnFirst(items){
-    const firstItem = items[0]; /*change this line to be es6*/
-    return firstItem
-}
+// const returnFirst = (items) => {
+//     const firstItem = items[0]; /*change this line to be es6*/
+//     return firstItem
+// }
 
+// console.log(returnFirst)
 
+// ------------------------------------------------------------------------------------------------------------------------------
 
-// Write destructuring code to assign variables that will help us return the expected string. Also, change the string to be using Template literals:
+// // Write destructuring code to assign variables that will help us return the expected string. Also, change the string to be using Template literals:
 
-const favoriteActivities = ["magnets", "snowboarding", "philanthropy", "janitor work", "eating"];
+// const favoriteActivities = c;
 
-function returnFavorites(arr){
-    /*your code here*/
-    return "My top three favorite activities are, " + firstFav + ", " + secondFav + ", and " + thirdFav";
-}
+// function returnFavorites(arr){
+//     /*your code here*/
+//     return "My top three favorite activities are, " + firstFav + ", " + secondFav + ", and " + thirdFav";
+// }
 
-returnFavorites(favoriteActivities)
+// const favoriteActivities = ["magnets", "snowboarding", "philanthropy", "janitor work", "eating"] 
+// const [one, two, three] = favoriteActivities
+
+// console.log("My top three favorite activities are, " + one)
+
+// ------------------------------------------------------------------------------------------------------------------------------

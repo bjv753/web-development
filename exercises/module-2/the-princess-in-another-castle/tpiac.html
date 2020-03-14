@@ -3,8 +3,138 @@
     <head>
     </head>
     <body>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+        <header>
+        <h1>Object Oriented Programming <i>with</i> JavaScript</h1>
+        </header>
+        <section>
+            <article>
+               <script type="text/javascript">
+                  function disp()
+                  { // so inside the body of disp i can literally refer to all the PersonalDataClass() function class properties and their values are going to show. 
+                      line1 = "<b>Name:</b>" + this.name + "<br>";
+                      line2  = "<b>Address:</b>" + this.address + "<br>";                     
+                      line3 = "<b>Work Phone:</b>" + this.work + "<br>";
+                      line4  = "<b>Home Phone:</b>" + this.home + "<br>";
+                      document.write('<hr>');
+                      document.write(line1);
+                      document.write("<hr>");
+                      document.write(line2); 
+                      document.write("<hr>");
+                      document.write(line3);
+                      document.write('<hr>');
+                      document.write(line4);
+                      document.write('<hr>');                  
+                  }
+                  
+                  // this function PersonalDataClass()  will actually be my constructor as well as my class name.
+                  function PersonalDataClass(name, address, work, home) // the four parameter variables located inside the parentheses(name, address, work, home) 
+                  // attached to my function PersonalDataClass(name, address, work, home) are listed as a part of the PersonalDataClass() function definition.
+                  {  // the object curly braces indicate the beginning and ending of the PersonalDataClass() function object body.
+                      this.name = name;
+                      this.address = address;
+                      this.work = work;
+                      this.home = home;
+                      this.disp = disp; // notice this.disp = disp; is not a parameter. rather, i am going to create a function called function disp().
+                                        // because the spelling of this.disp = disp; is exactly the same as our function disp(), my function disp() has access to each class property inside of the PersonalDataClass() function object {body}, where the this.disp = disp; class property value is located with the other PersonalDataClass() function class property values.
+                    // the propertie values of the parameters are indicated by the this.property = property syntax. 
+                    // the properties must be assigned inside the functions object body.
+                    // without the this. syntax the parameters remain parameters and can not be assigned to a this.property = property value. the this.property = property syntax assigns parameter values to property values.  
+                  }
+                  // so, outside my function, if i want to create an object, i can say, i want to create a var personalObject equals to = new PersonalDataClass(); and i can literally pass four values.
+                  // let me create those four values i want to pass,
+                  n = "Saad"
+                  a = "3929 Elm Street, XY. 10001";
+                  w = "262-900-0000";
+                  h = "905-900-0000";
+                  var personalObject = new PersonalDataClass(n,a,w,h);// now we are going to pass these four values assigned on the four lines directly above this line starting with the var personalObject = new PersonalDataClass() inside the new PersonalDataClass()function parentheses exactly like this: var personalObject = new PersonalDataClass(n, a, w, h);
+                  personalObject.disp();
+                  // because the new PersonalDataClass() is spelled the same as the function PersonalDataClass() n is now assigned to name, a is now assigned to address, w is now assigned to work, and h is now assigned to home. 
+                  // the value assigned to n will be outputted to the parameter value with the exact same index value. in n's case n is equal to index[0] in names case name is equal to index[0];
+                  // the value assigned to a will be outputted to the parameter value with the exact same index value. in a's case a is equal to index[1] in addresse's case address is equal to index[1];
+                  // the value assigned to w will be outputted to the parameter value with the exact same index value. in w's case w is equal to index[2] in works's case work is equal to index[2];
+                  // the value assigned to h will be outputted to the parameter value with the exact same index value. in h's case h is equal to index[3] in home's case home is equal to index[3];
+                  // and then, once the parameters of function PersonalDataClass(name, address, work, home) receive these new values, 
+                  // these new values will be assigned to the propertie values the original parameters of the function PersonalDataClass(name, address, work, home) are also assigned to.
+                  // so what you can do is, you can actually have a property of the class tied to a method
+             
+                </script>
+            </article>
+        </section>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script> -->
         <script src="tpiac.js"></script>
     </body>
 </html>
+
+<!-- so, the class properties inside the object curly brackets on the next line down  
+     he's having programming dreams ha ha
+
+                        {
+                            this.name = name;
+                            this.address = address;
+                            this.work = work;
+                            this.home = home;
+                            this.disp = disp;
+                        }
+    must be assigned (===) to either a variable, parameter, or function.
+
+                    this.disp = disp; is = a class function property.
+
+                    this.disp = disp; holds a reference place of the function disp()
+                    because the spelling of disp === disp
+
+                    since this.disp = disp; is a property of the 
+                    Construtor function 
+                    PersonalDataClass(name, address, work, home)
+                    {
+                        this.name = name;
+                        this.address = address;
+                        this.work = work;
+                        this.home = home;
+                        this.disp = disp;
+                    }
+                    now we can create a new function called 
+                    function disp()
+                    {
+
+                    }
+                    and now the 
+                    function disp()
+                    {
+
+                    } 
+                    has access to all of the properties
+                    inside the Construtor Function 
+                    PersonalDataClass(name, address, work, home) 
+                    {
+                        this.name = name;
+                        this.address = address;
+                        this.work = work;
+                        this.home = home;
+                    }
+                    because this.disp = disp; is a property of
+                    the Constructor Function 
+                    PersonalDataClass(name, address, work, home)
+                    {
+                        this.name = name;
+                        this.address = address;
+                        this.work = work;
+                        this.home = home;
+                        this.disp = disp;
+                    }
+
+                    inside each object is an {enviornment}. the {environment} inside each object
+                    has this.properties = properties which are called propterties & are fully 
+                    aware of the {environment} in which they exist, inside the object === {}. 
+                    
+                    now, imagine the property this.name = name; has 5 main senses stricktly 
+                    equal to your five senses. now, imagine each this.property = property
+                    is actually a student learning inside^∞ a class room. The this.properties = 
+                    properties; which are now students, are aware of each student and can 
+                    interact with each student. now imagine the environment inside each object
+                    is actually a class room. notice the word class before class room and link 
+                    the word class in the phrase class room to the word Class in the constructor 
+                    function Personal Data Class.
+
+
+
+-->
