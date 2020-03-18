@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <header>
+            <h2>Object Oriented Programming <i>with</i> JavaScript</h2>
+        </header>
+        <section>
+            <article>
+                <h3>Book Information</h3>
+                <form name="frmBooks">
+                    Book Title:
+                    <input type="text" name="txtTitle1" size="45">
+                    <br><br>
+                    Book Author:
+                    <input type="text" name="txtAuthor1" size="25">
+                    <br><br>
+                    Book Copyright Year:
+                    <input type="text" name="txtBY1" size="4">
+                    <br><br>
+                    <input type="button" value="Show Book Info" onClick="getBookInfo()">
+                    <br><br>
+                    Extra Credit:
+                    <input type="" name="">
+                </form>
+                <script type="text/javascript">
+                        function WBook(bkName, auth, yr)
+                        {
+                            this.Title = bkName;
+                            this.Author = auth;
+                            this.CopyrightYear = yr;
+                        }
+                        function showABook(aBook)
+                        {
+                            document.frmBooks.txtTitle1.value = aBook.Title;
+                            document.frmBooks.txtAuthor1.value = aBook.Author;
+                            document.frmBooks.txtBY1.value = aBook.CopyrightYear;    
+                        }
+                        
+                        function getBookInfo()
+                        {
+                            var book1 = new WBook("Intro to JS", "Saad", 2017)
+                            showABook(book1);
+                        }
+                </script>
+            </article>
+        </section>
+    </body>
+</html>

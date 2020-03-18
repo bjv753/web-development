@@ -529,36 +529,6 @@ How to explain object-oriented programming concepts to a 6-year-old
         Next, I'll focus on what employers want to see in a junior developer
         and how to stand out from the crowd when job hunting.
 
-        Stay tuned.
-
-        */
-
-        // function disp()
-        // {
-        //     line1 = "<b>Name:</b>" + this.name + "<br>";
-        //     line2 = "<b>Address:</b>" + this.address + "<br>";
-        //     line3 = "<b>Work Phone:</b>" + this.address + "<br>";
-        //     line4 = "<b>Home Phone:</b>" + this.home + "<br>";
-        //     document.write(line1, line2, line3, line4);
-        //     document.write("<hr>");
-        // }
-        // function PersonalDataClass(name, address, work, home)
-        // {
-        //     this.name=name;
-        //     this.address=address;
-        //     this.work=work;
-        //     this.home=home;
-        //     this.disp = disp;
-        // }
-        // n = "Saad";
-        // a = "3929 Elm West Street, XY. 10001";
-        // w = "262-900-000";
-        // h = "905-900-0000";
-
-        // var personalObject = new PersonalDataClass(n,a,w,h);
-        // personalObject.disp();
-
-
 
 
 
