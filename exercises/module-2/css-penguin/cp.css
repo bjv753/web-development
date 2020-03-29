@@ -1,19 +1,17 @@
 .penguin-top:hover {
   background-color: rgb(227, 128, 128);
-  width: 55%;
 }
 
 .penguin-bottom:hover {
   background-color: rgb(255, 154, 154);
-  width: 55%;
 }
 
 
 .penguin {
     
     /* change code below */
-    --penguin-skin: whitesmoke;
-    --penguin-belly: white;
+    --penguin-skin: rgb(240, 125, 255);
+    --penguin-belly: rgb(241, 218, 255);
     --penguin-feet: lightpink;
     /* change code above */
 
@@ -38,7 +36,6 @@
     transition-duration: 1s;
     transition-timing-function: ease;
     transition-delay: 1s; */
-    transition:  background-color 1s linear 1s, width 1s;
   }
 
   .penguin-bottom {
@@ -52,7 +49,6 @@
     transition-duration: 1s;
     transition-timing-function: ease;
     transition-delay: 1s; */
-    transition: background-color 1s linear 1s, width 1s;
   }
 
   .right-hand {
@@ -80,7 +76,7 @@
   .right-cheek {
     top: 15%;
     left: 35%;
-    background: var(--penguin-belly, white);
+    background: var(--penguin-belly, rgb(209, 97, 243));
     width: 60%;
     height: 70%;
     border-radius: 70% 70% 60% 60%;
@@ -98,7 +94,7 @@
   .belly {
     top: 60%;
     left: 2.5%;
-    background: var(--penguin-belly, white);
+    background: var(--penguin-belly, rgb(134, 13, 158));
     width: 90%;
     height: 100%;
     border-radius: 50% 50% 50% 50%;
@@ -142,6 +138,46 @@
     width: 15%;
     height: 17%;
     border-radius: 50%;
+  }
+
+  .breast-right {
+    top: 85%;
+    left: 50%;
+    background: rgb(231, 109, 255);
+    width: 35%;
+    height: 40%;
+    border-radius: 400% 400% 400% 400%;
+    transform: rotate(70deg);
+  }
+
+  .breast-left {
+    top: 85%;
+    left: 11%;
+    background: rgb(231, 109, 255);
+    width: 35%;
+    height: 40%;
+    border-radius: 400% 400% 400% 400%;
+    transform: rotate(-70deg);
+  }
+
+  .nipple-right {
+    top: 105%;
+    left: 65%;
+    background: rgb(142, 18, 167);
+    width: 10%;
+    height: 10%;
+    border-radius: 400% 400% 400% 400%;
+    transform: rotate(70deg);
+  }
+
+  .nipple-left {
+    top: 105%;
+    left: 25%;
+    background: rgb(142, 18, 167);
+    width: 10%;
+    height: 10%;
+    border-radius: 400% 400% 400% 400%;
+    transform: rotate(-70deg);
   }
 
   .sparkle { 
