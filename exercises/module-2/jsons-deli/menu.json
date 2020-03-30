@@ -1,0 +1,104 @@
+menu = [
+    {
+        "appetizers":
+        [
+            {
+                "name": "mini-pizza",
+                "ingerdients": ["peperoni", "cheese", "stuffed-crust"],
+                "description": "yummy1"
+            },
+            {
+                "name": "nachos",
+                "ingredients":["chicken","chips","cheese"]
+                "description":"yummy2"
+            }
+            {
+                "name": "tempura-roll",
+                "ingredients":["salmon","cream-cheese","cucumber"]
+                "description":"yummy3"
+            }
+        ]
+    },
+    {
+        "cold sandwiches":
+        [
+            
+            {
+                "name": "turkey",
+                "ingredients":["chopped-turkey-legs","extra-medium-chedar","avacado","whipped-cream-cheese"],
+                "description":"yummy4"
+            },
+            {
+                "name": "hammy",
+                "ingredients":["black-forest-ham","dutch-havarti","avacado","whipped-cream-cheese"],
+                "description":"yummy5"
+            },
+            {
+                "name": "chicken",
+                "ingredients":["chopped-chicken-thighs","dutch-havarti","avacado","whipped-cream-cheese"],
+                "description":"yummy6"
+            }
+        ]
+    },
+    {
+        "hot sandwiches":
+        [
+            {
+                "name": "turkey",
+                "ingredients":["chopped-turkey-legs","extra-medium-chedar","avacado","whipped-cream-cheese"],
+                "description":"yummy4"
+            },
+            {
+                "name": "hammy",
+                "ingredients":["black-forest-ham","dutch-havarti","avacado","whipped-cream-cheese"],
+                "description":"yummy5"
+            },
+            {
+                "name": "chicken",
+                "ingredients":["chopped-chicken-thighs","dutch-havarti","avacado","whipped-cream-cheese"],
+                "description":"yummy6"
+            }  
+        ]
+    },
+    {
+        "deserts":
+        [
+            {
+                "name": "parfait",
+                "ingredients":["vanilla-ice-cream","chocolate-syrup","cookie-dough"],
+                "description":"yummy10"
+            },
+            {
+                "name": "",
+                "ingredients":[,,]
+                "description":"yummy11"
+            },
+            {
+                "name": "",
+                "ingredients":[,,]
+                "description":"yummy12"
+            } 
+        ]
+    },
+    {
+        "drinks":
+        [
+            {
+                "name": "",
+                "ingredients":[,,]
+                "description":"yummy13"
+            },
+            {
+                "name": "",
+                "ingredients":[,,]
+                "description":"yummy14"
+            },
+            {
+                "name": "",
+                "ingredients":[,,]
+                "description":"yummy15"
+            }
+        ]
+    
+    }
+]
